@@ -10,9 +10,6 @@ minimizeBtn.addEventListener('click', () => {
 });
 
 dlbtn.addEventListener('click', () => {
-    ipc.send('downloadSong');
-});
-
-URLinput.addEventListener('click', (e) => {
-    ipc.send('URLinput');
+    const url = document.getElementById('URLinput').value;
+    ipc.send('downloadSong', url);
 });

@@ -1,9 +1,7 @@
-const os = require ('os');
-const username = os.userInfo ().username;
 const { app, BrowserWindow, ipcRenderer, ipcMain } = require('electron')
-const $ = require ('jquery');
 const ipc = ipcMain;
 const path = require("path");
+const fs = require("fs");
 
 
 const createWindow = () => {
@@ -12,40 +10,39 @@ const createWindow = () => {
       height: 350,
       icon: 'src/public/icon.png',
       frame: false,
-      resizable: true,
+      resizable: false,
       webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
-        devTools: true,
+        devTools: false,
       }
     })
 
     win.setMenuBarVisibility(false)
-  
+
     win.loadFile('src/index.html')
 
 // DOWNLOAD SONG
-const scdl = require('js-scdl')
-const Soundcloud = new scdl.SoundCloud();
-ipc.on('downloadSong', () => {
-console.log('Downloading song...')
-Soundcloud.download('https://soundcloud.com/velcroo/velcro-lightspeed-quantum', 'D:/VNCE/Téléchargements')
-console.log('Song downloaded!')
+
+const youtubedl = require('youtube-dl-exec')
+
+ipc.on('downloadSong', (event, url) => {
+  console.log('Downloading song from: ' + url)
+
+youtubedl(url, {
+  noCheckCertificates: true,
+  ["add-metadata"]: true,
+  ["embed-metadata"]: true,
+  ["embed-thumbnail"]: true,
+  ["parse-metadata"]: 'title:%(album)s',
+  ["parse-metadata"]: 'uploader:%(album_artist)s',
+  ["output"]: '%(title)s.%(ext)s',
+  noWarnings: true,
+  preferFreeFormats: true,
+
+}).then(output => console.log(output))
+
 });
-
-// ipc.on('downloadSong', () => {
-
-// client.getSongInfo(URLinput)
-//     .then(async song => {
-//         const stream = await song.downloadProgressive();
-//         const writer = stream.pipe(fs.createWriteStream(`./${song.title}.mp3`));
-//         writer.on("finish", () => {
-//           console.log("Finished writing song!")
-//           process.exit(1);
-//         });
-//     })
-//     .catch(console.error);
-// });
 
 // CLOSE APP
     ipc.on('closeApp', () => {

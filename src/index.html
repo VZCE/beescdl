@@ -13,9 +13,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap"
     />
+    
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+<!-- font flat-ui cdn 2.2.2 -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.2.2/css/flat-ui.min.css"
+    integrity="sha512-PvB3Q4vTvWD/9aiiELYI3uebup/4mtou3Mc/uGudC/Zl+C9BdKUkAI+5jORfA+fvLK4DpzC5VyEN7P2kK43hjg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="controls.js" defer type="module"></script>
-    <script src="downloader.js" defer type="module"></script>
+    <!-- <script src="downloader.js" defer type="module"></script> -->
+    <script src="../index.js"></script>
 
   </head>
   <body>
@@ -78,9 +86,8 @@
         </div>
       </div>
       <div class="urlbox">
-        <input type="URLinput" class="urltext">
-        <input class="btn btn-primary" type="submit" id="dlbtn" value="Download" />
-        <!-- <img type="Submit" value="Submit" class="dl-icon" src="public/interfacedownloadbutton2arrowbottomdowndownloadinternetnetworkserverupload.svg"/> -->
+        <input id="URLinput" type="text" class="urltext">
+        <a href=""><i id="dlbtn" value="Download" class="fi-rr-download dl-icon"></i></a>
       </div>
       <div class="enter-an-url">ENTER AN URL</div>
       <b class="hello-vnce">👋 Hello, VNCE</b>
