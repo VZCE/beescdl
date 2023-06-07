@@ -17,18 +17,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
-    "bc-dlp": "^1.0.3",
     "eyed3": "^0.0.1",
     "ffmpeg": "^0.0.4",
-    "jquery": "^3.7.0",
-    "js-scdl": "^1.0.2",
-    "node-scdl": "^1.0.2",
-    "scdl": "^0.1.6",
-    "scdl-core": "^1.1.0",
-    "soundcloud-dl": "^1.0.3",
-    "soundcloud-downloader": "^1.0.0",
-    "soundcloud-scraper": "^5.0.3",
-    "youtube-dl-exec": "^2.4.4",
-    "ytdl-core": "^4.11.4"
+    "youtube-dl-exec": "^2.4.4"
   }
 }
