@@ -1,9 +1,23 @@
-# beescdl
- A simple Soundcloud downloader that set ID3TAG. Works perfectly fine for MusicBee
+<br />
+<p align="center">
+    <img src="src/public/icon.png" alt="Logo" width="156" height="156">
+  </a>
+  <h2 align="center" style="font-weight: 600">beescdl</h2>
+
+  <p align="center">
+     A simple Soundcloud downloader that set ID3TAG. Works perfectly fine for MusicBee
+    <br />
+    <a href="https://github.com/VZCE" target="blank"><strong>🌎 VNCE</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="https://github.com/VZCE/beescdl/releases" target="blank"><strong>📦️ Download</strong></a>&nbsp;&nbsp;|&nbsp;&nbsp;
+    <a href="" target="blank"><strong>💬 ###</strong></a>
+    <br />
+    <br />
+  </p>
+</p>
 
 -----
 
-## Screnshot
+## Screenshots
 ![App Screenshot](https://cdn.discordapp.com/attachments/917906344118476822/1116305200379088976/image.png)
 
 -----
