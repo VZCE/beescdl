@@ -37,6 +37,7 @@
       "installerIcon": "src/public/icon.ico",
       "installerHeaderIcon": "src/public/icon.ico",
       "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
       "deleteAppDataOnUninstall": true
     }
 }
