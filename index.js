@@ -21,9 +21,9 @@ const createWindow = () => {
     win.setMenuBarVisibility(false)
 
     win.loadFile('src/index.html')
+    
 
 // DOWNLOAD SONG
-
 const youtubedl = require('youtube-dl-exec')
 
 ipc.on('downloadSong', (event, url) => {
@@ -36,7 +36,7 @@ youtubedl(url, {
   ["embed-thumbnail"]: true,
   ["parse-metadata"]: 'title:%(album)s',
   ["parse-metadata"]: 'uploader:%(album_artist)s',
-  ["output"]: '%(title)s.%(ext)s',
+  ["output"]: '%(uploader)s/%(title)s.%(ext)s',
   noWarnings: true,
   preferFreeFormats: true,
 
@@ -44,11 +44,13 @@ youtubedl(url, {
 
 });
 
+
 // CLOSE APP
     ipc.on('closeApp', () => {
     console.log('App closed by user')
     win.close()
     });
+
 
 // MINIMIZE APP
     ipc.on('minimizeApp', () => {
@@ -56,6 +58,7 @@ youtubedl(url, {
     win.minimize()
     });
   }
+
 
     app.whenReady().then(createWindow);
 
