@@ -21,6 +21,9 @@ body {
   border: none;
   z-index: 9999;
   cursor: pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
 }
 
 .navmin:hover {
@@ -42,6 +45,9 @@ body {
   font-size: 14px;
   outline: none;
   border: none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
 }
 
 .hello-vnce {
@@ -49,6 +55,9 @@ body {
   top: 52px;
   left: 42px;
   font-size: 28px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
 }
 
 
@@ -58,6 +67,9 @@ body {
   left: 87px;
   font-size: 15px;
   font-weight: 300;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
 }
 
 .urlbox {
@@ -154,6 +166,9 @@ body {
     gap: 10px;
     color: #fff;
     font-family: var(--font-poppins);
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    user-select:none;
   }
 
 
