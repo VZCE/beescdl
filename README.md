@@ -18,7 +18,8 @@
 -----
 
 ## Screenshots
-![App Screenshot](https://cdn.discordapp.com/attachments/917906344118476822/1116305200379088976/image.png)
+
+<img align=center src="https://cdn.discordapp.com/attachments/917906344118476822/1116305200379088976/image.png">
 
 -----
 
