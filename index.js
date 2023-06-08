@@ -36,7 +36,7 @@ youtubedl(url, {
   ["embed-thumbnail"]: true,
   ["parse-metadata"]: 'title:%(album)s',
   ["parse-metadata"]: 'uploader:%(album_artist)s',
-  ["output"]: '%(uploader)s/%(title)s.%(ext)s',
+  ["output"]: '~/Desktop/%(uploader)s/%(title)s.%(ext)s',
   noWarnings: true,
   preferFreeFormats: true,
 
