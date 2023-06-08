@@ -24,7 +24,7 @@ body {
 }
 
 .navmin:hover {
-  background-color: rgb(15, 15, 15);
+  background-color: rgb(44, 44, 44);
   transition: .4s ease-in-out;
 }
 
@@ -43,6 +43,14 @@ body {
   outline: none;
   border: none;
 }
+
+.hello-vnce {
+  position: absolute;
+  top: 52px;
+  left: 42px;
+  font-size: 28px;
+}
+
 
 .enter-an-url {
   position: absolute;
@@ -113,111 +121,40 @@ body {
     --br-5xs: 8px;
   }
 
-  .logo-icon {
-    position: relative;
-    width: 24px;
-    height: 24px;
-  }
-  .beescdl1 {
-    position: relative;
-    line-height: 32px;
-    font-weight: 500;
-  }
-  .brand {
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-  }
-  .entertainment-music-note-1-mu-icon {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    overflow: hidden;
-    flex-shrink: 0;
-  }
-  .track {
-    position: relative;
-    line-height: 20px;
-  }
-  .entertainment-music-note-1-mu-parent {
-    border-radius: var(--br-5xs);
-    display: flex;
-    flex-direction: row;
-    padding: var(--padding-3xs) var(--padding-base);
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-  }
-  .vuesaxlineararrow-down-icon {
-    position: relative;
-    width: 20px;
-    height: 20px;
-  }
-  .interface-share-user-human-pe-parent {
-    align-self: stretch;
-    border-radius: var(--br-5xs);
-    display: flex;
-    flex-direction: row;
-    padding: var(--padding-3xs) var(--padding-base);
-    align-items: center;
-    justify-content: flex-start;
-    gap: var(--gap-xs);
-  }
-  .frame-parent {
-    align-items: flex-start;
-    justify-content: flex-start;
-    font-size: var(--font-size-sm);
-    color: var(--dark-theme-subheader-text);
-  }
-  .frame-parent,
-  .right-side-menu,
-  .version-4 {
-    display: flex;
-    flex-direction: row;
-  }
-  .right-side-menu {
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 24px;
-  }
-  .version-4 {
-    position: absolute;
-    bottom: 0;
-    left: calc(50% - 400px);
-    background-color: #1e140b;
-    width: 800px;
-    padding: var(--padding-base) 24px;
-    box-sizing: border-box;
-    align-items: flex-end;
-    justify-content: space-between;
-    font-family: var(--font-poppins);
-  }
-
-  .enter-an-url {
-    position: absolute;
-    top: 133px;
-    left: 87px;
-    font-size: 15px;
-    font-weight: 300;
-  }
-  .hello-vnce {
-    position: absolute;
-    top: 52px;
-    left: 42px;
-    font-size: 28px;
-  }
   .beescdl {
     position: relative;
     background-color: #1a1a1a;
     width: 100%;
     height: 350px;
-    overflow: hidden;
-    text-align: left;
+    
     font-size: 18px;
     color: var(--dark-theme-header-text);
     font-family: var(--font-montserrat);
   }
+
+.footer {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    line-height: 50px;
+    background-color: #251708;
+    padding: 3px 30px;
+    color: #fff;
+  }
+
+  .footer .brand {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    line-height: 32px;
+    font-weight: 500;
+    gap: 10px;
+    color: #fff;
+    font-family: var(--font-poppins);
+  }
+
+
   
