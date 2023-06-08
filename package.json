@@ -1,10 +1,12 @@
 {
-  "name": "beescownloader",
+  "name": "beesccdl",
   "version": "1.0.0",
   "description": "A simple Soundcloud downloder that set ID3TAG. Works perfectly fine for MusicBee",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "app:dir": "electron-builder --dir",
+    "app:dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -13,12 +15,28 @@
   "author": "VZCE",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^24.4.0"
+    "electron": "^24.4.0",
+    "electron-builder": "^23.6.0",
+    "electron-packager": "^17.1.1"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
     "eyed3": "^0.0.1",
     "ffmpeg": "^0.0.4",
     "youtube-dl-exec": "^2.4.4"
-  }
+  },
+  "build": {
+    "productName": "beescdl",
+    "appId": "com.electron.beescdl",
+    "win": {
+        "asar": false,
+        "target": "nsis",
+        "icon": "src/public/icon.ico"
+    },
+    "nsis": {
+      "installerIcon": "src/public/icon.ico",
+      "installerHeaderIcon": "src/public/icon.ico",
+      "deleteAppDataOnUninstall": true
+    }
+}
 }
